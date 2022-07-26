@@ -1,7 +1,6 @@
 package com.cg.order.model;
 
 import java.time.LocalDateTime;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -31,29 +30,37 @@ public class Order {
 	@Column(name = "order_Date")
 	private LocalDateTime orderDate;
 	
+
 	public int getOrderId() {
 		return orderId;
 	}
+
 	public void setOrderId(int orderId) {
 		this.orderId = orderId;
 	}
+
 	public String getOrderName() {
 		return orderName;
 	}
+
 	public void setOrderName(String orderName) {
 		this.orderName = orderName;
 	}
+
 	public double getOrderPrice() {
 		return orderPrice;
 	}
+
 	public void setOrderPrice(double orderPrice) {
 		this.orderPrice = orderPrice;
 	}
+
 	public LocalDateTime getOrderDate() {
 		return orderDate;
 	}
+
 	public void setOrderDate(LocalDateTime orderDate) {
 		this.orderDate = orderDate;
 	}
-
+	
 }

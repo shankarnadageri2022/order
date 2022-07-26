@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class GlobalExceptionHandler {
 
 	@ExceptionHandler(value=OrderNotFoundException.class)
-	public ResponseEntity<String> handleServiceNotFoundException(Exception e){
+	public ResponseEntity<String> handleOrderNotFoundException(Exception e){
 	ResponseEntity<String> responseEntity=new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);
 	return responseEntity;
 	}
